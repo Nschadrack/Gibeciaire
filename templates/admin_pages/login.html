@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/admin.css') }}">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+    	  <div class="container-fluid" id="admin_head">
+              <div class="text-center text-success" id="admin_headh1">
+                <h1>GIBECIARE Admin Page</h1>
+              </div> 
+       </div>
+
+       <div class="row">
+         <div class="col-md-4">
+             
+         </div> 
+         <div class="col-md-4">
+             <form action="" method="POST" class="bg-success text-warning" style="padding:10px; margin-top: 40px">
+                {{ form.hidden_tag() }}
+                 <fieldset class="form-group">
+                     <legend class="border-bottom mb-2 h3">Login admin account</legend>
+                 
+                      <div class="form-group">
+                         {{ form.username.label(class="form-control-label h4") }}
+                         {{ form.username(class="form-control form-control-sm h4", placeholder="enter your username", autocomplete="off") }}
+                     </div>
+                      <div class="form-group">
+                         {{ form.password.label(class="form-control-label h4" ) }}
+                         {{ form.password(class="form-control form-control-sm h4", placeholder="enter your password") }}
+                     </div>
+                     <div class="form-check">
+                      {{ form.remember(class="form-check-input")}}
+                      {{ form.remember.label(class="form-check-label h6")}}
+                     </div>
+                 </fieldset>
+                 <div class="form-group">
+                     {{ form.submit(class="btn btn-outline-warning margin-left ml-4 h6") }}
+                 </div>
+             </form>
+         </div> 
+         <div class="col-md-4">
+             
+         </div>  
+       </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

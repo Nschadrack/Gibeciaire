@@ -1,0 +1,46 @@
+{% extends "admin_pages/admin_main_content.html" %}
+{% block admincontent %}
+
+    	  <div class="container-fluid">
+            <div class="row food_row" id="chickens">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[0] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=1) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=1) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[1] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=2) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=2) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[2] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=3) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=3) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="pizza">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[3] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=4) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=4) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[4] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=5) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=5) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                   <img src="{{ curee[5] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('update_others', id=6) }}">Update Photo</a>
+                    <a href="{{ url_for('post_others', id=6) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+   
+        </div>
+
+
+{% endblock %}

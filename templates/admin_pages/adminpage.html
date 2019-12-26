@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/admin.css') }}">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Gibeciaire - Admin Dashboard</title>
+  </head>
+  <body>
+          <div class="container-fluid" id="admin_head">
+              <div class="text-center text-success" id="admin_headh1">
+                <h1>GIBECIARE Admin Page</h1>
+              </div>
+              <div id="admin_headpart" class="text-center">
+                <h1>Update Photos for pages and view used photos</h1>
+                <div>
+                  <a href="{{ url_for('admin_food') }}" target="frameadmin">Food Alimentation</a>
+                  <a href="{{ url_for('admin_shop') }}" target="frameadmin">Hen Alimentation</a>
+                  <a href="{{ url_for('admin_others') }}" target="frameadmin">Others</a>
+                  <a href="{{ url_for('logout') }}" class="bg-success text-warning">Logout</a>
+                </div>
+                <iframe src="{{ url_for('admin_food') }}" name="frameadmin"></iframe>
+              </div>
+          </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

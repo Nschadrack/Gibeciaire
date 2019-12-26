@@ -1,0 +1,21 @@
+{% extends "english/main_small.html" %}
+
+{% block body %}
+<body>
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/PIZZAPAGE/PIZZA19.jpg') }}" class="img-fluid">
+			<h2>Italian Pizza</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>
+		</div>
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/PIZZAPAGE/PIZZA17.jpg') }}" class="img-fluid">
+			<h2>American Pizza</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>		
+		</div>
+		<div class="pizzaclass">			
+			<img src="{{ url_for('static', filename = 'images/PIZZAPAGE/PIZZA201.jpg') }}" class="img-fluid">
+			<h2>Greek Pizza</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>
+		</div>
+
+{% endblock %}

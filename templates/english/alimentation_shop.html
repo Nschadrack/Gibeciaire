@@ -1,0 +1,72 @@
+{% extends "english/main_content.html" %}
+
+{% block content %}
+
+        <div class="container">
+
+            <div class="row food_row" id="live_hens">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[0] }}" alt="liv_hen" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[1] }}" alt="live_hens" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[2] }}" alt="liv_hen" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="burger">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[3] }}" alt="eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[4] }}" alt="eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[5] }}" alt="eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="cakes">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[6] }}" alt="white eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[7] }}" alt="white eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[8] }}" alt="white eggs" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="bread">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[9] }}" alt="uncooked_chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[10] }}" alt="uncooked_chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[11] }}" alt="uncooked_chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('contact') }}">Order now</a>
+                </div>
+               
+            </div> 
+        </div>
+        
+{% endblock %}

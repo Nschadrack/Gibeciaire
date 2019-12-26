@@ -1,0 +1,20 @@
+{% extends "french/main_smallfre.html" %}
+{% block bodyfre %}
+
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/PASTASPAGE/spaghetti+with+meat+sauce11.jpg') }}" alt="Meat +sauce pasta" class="img-fluid">
+			<h2>Spaghetti With Meat</h2>
+			<a href="tel:+243-973-615-181">commander</a>
+		</div>
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/PASTASPAGE/mh_1036_spaghetti_hd.jpg') }}" alt="Delicous Spaghetti" class="img-fluid">
+			<h2>Delicous Spaghetti</h2>
+			<a href="tel:+243-973-615-181">commander</a>
+		</div>
+		<div class="pizzaclass">			
+			<img src="{{ url_for('static', filename = 'images/PASTASPAGE/food-john-alberti-pasta-with-italian-sausage.jpg') }}" alt="ialian sausage" class="img-fluid">
+			<h2>Italian Pasta Sausage</h2>
+			<a href="tel:+243-973-615-181">commander</a>
+		</div>
+
+{% endblock %}

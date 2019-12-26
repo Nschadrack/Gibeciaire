@@ -1,0 +1,35 @@
+{% extends "french/main_contentfre.html" %}
+{% block bodyfre %}
+        <div class="container">
+            <div class="row food_row" id="live_hens">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[0] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[1] }}" alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[2] }}" alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+            </div> 
+            <div class="row food_row" id="burger">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[3] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ current_im[4] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                   <img src="{{ current_im[5] }}"  alt="pamper" class="img-fluid"><br>
+                    <a href="{{ url_for('noscontacts') }}">Commander</a>
+                </div>
+               
+            </div> 
+       </div>     
+
+{% endblock %}

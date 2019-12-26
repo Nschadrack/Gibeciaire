@@ -1,0 +1,21 @@
+{% extends "english/main_small.html" %}
+
+{% block body %}
+
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/DRINKSPAGE/apple juice1.jpeg') }}" class="img-fluid">
+			<h2>Fresh Apple Juice</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>
+		</div>
+		<div class="pizzaclass">
+			<img src="{{ url_for('static', filename = 'images/DRINKSPAGE/juices1.jpg') }}" class="img-fluid">
+			<h2>Pineapple Orange</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>		
+		</div>
+		<div class="pizzaclass">			
+			<img src="{{ url_for('static', filename = 'images/DRINKSPAGE/lemonade juice1.jpg') }}" class="img-fluid">
+			<h2>Lemonade Juice</h2>
+			<a href="tel:+243-973-615-181">Order Now</a>
+		</div>
+
+{% endblock %}

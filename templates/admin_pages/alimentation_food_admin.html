@@ -1,0 +1,273 @@
+{% extends "admin_pages/admin_main_content.html" %}
+{% block admincontent %}
+
+    	  <div class="container-fluid">
+            <div class="row food_row" id="chickens">
+                <div class="col-md-3 food_row-cols">
+                     <img src="{{ curee[0] }}" alt="chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=1) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=1) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[1] }}" alt="chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=2) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=2) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[2] }}" alt="chickens" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=3) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=3) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="pizza">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[3] }}" alt="pizza" class="img-fluid" title="american pizza"><br>
+                    <a href="{{ url_for('update_food', id=4) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=4) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[4] }}" alt="pizza" class="img-fluid" title="greek pizza"><br>
+                    <a href="{{ url_for('update_food', id=5) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=5) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[5] }}" alt="pizza" class="img-fluid" title="Italian pizza"><br>
+                    <a href="{{ url_for('update_food', id=6) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=6) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="burger">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[6] }}" alt="burger" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=7) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=7) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[7] }}" alt="burger" class="img-fluid"><br>
+                   <a href="{{ url_for('update_food', id=8) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=8) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[8] }}" alt="burger" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=9) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=9) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="cakes">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[9] }}" alt="cakes" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=10) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=10) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[10] }}" alt="cakes" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=11) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=11) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[11] }}" alt="cakes" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=12) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=12) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="bread">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[12] }}" alt="bread" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=13) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=13) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[13] }}" alt="bread" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=14) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=14) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[14] }}" alt="bread" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=15) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=15) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+            
+            <div class="row food_row" id="juices">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[15] }}" alt="juices" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=16) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=16) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[16] }}" alt="juices" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=17) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=17) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[17] }}"  alt="juices" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=18) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=18) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="popcone">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[18] }}" alt="popcone" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=19) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=19) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[19] }}" alt="popcone" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=20) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=20) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[20] }}" alt="popcone" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=21) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=21) }}">Post Photo</a>
+                </div>
+               
+            </div>
+
+            <div class="row food_row" id="ndazi">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[21] }}" alt="ndazi" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=22) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=22) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[22] }}" alt="ndazi" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=23) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=23) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[23] }}" alt="ndazi" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=24) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=24) }}">Post Photo</a>
+                </div>
+               
+            </div>
+
+           <div class="row food_row" id="sambussa">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[24] }}" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=25) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=25) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[25] }}" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=26) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=26) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[26] }}" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=27) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=27) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+           <div class="row food_row" id="brochette">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[27] }}" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=28) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=28) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[28] }}" alt="brochette" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=29) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=29) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[29] }}" alt="brochette" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=30) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=30) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="beignet">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[30] }}" alt="beignet" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=31) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=31) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[31] }}" alt="beignet" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=32) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=32) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[32] }}" alt="beignet" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=33) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=33) }}">Post Photo</a>
+                </div>
+               
+            </div>
+
+            <div class="row food_row" id="chawarwa">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[33] }}" alt="chawarwa" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=34) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=34) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[34] }}" alt="chawarwa" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=35) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=35) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[35] }}" alt="chawarwa" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=36) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=36) }}">Post Photo</a>
+                </div>
+               
+            </div> 
+
+            <div class="row food_row" id="pasta">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[36] }}" alt="pasta" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=37) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=37) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[37] }}" alt="pasta" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=38) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=38) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[38] }}" alt="pasta" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=39) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=39) }}">Post Photo</a>
+                </div>
+            </div>
+
+            <div class="row food_row" id="pvin">
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[39] }}"  alt="pvin" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=40) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=40) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[40] }}" alt="pvin" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=41) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=41) }}">Post Photo</a>
+                </div>
+                <div class="col-md-3 food_row-cols">
+                    <img src="{{ curee[41] }}" alt="pvin" class="img-fluid"><br>
+                    <a href="{{ url_for('update_food', id=42) }}">Update Photo</a>
+                    <a href="{{ url_for('post_food', id=42) }}">Post Photo</a>
+                </div>
+               
+            </div>   
+        </div>
+
+
+
+{% endblock %}

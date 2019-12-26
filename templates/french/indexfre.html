@@ -1,0 +1,215 @@
+{% extends "french/main_contentfre.html" %}
+{% block bodyfre %}
+
+    <!--sliding images in the main homepage -->
+    <div id="main_slide" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#main_slide" data-slide-to="0" class="active"></li>
+        <li data-target="#main_slide" data-slide-to="1"></li>
+        <li data-target="#main_slide" data-slide-to="2"></li>
+        <li data-target="#main_slide" data-slide-to="3"></li>
+        <li data-target="#main_slide" data-slide-to="4"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+           <img src="{{ url_for('static', filename='images/MAIN_SLIDE/food-pizza-baking.jpg') }}" alt="Amarican Pizza"  class="main_slide_imag img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='images/MAIN_SLIDE/PIZZA27.jpg') }}" alt="Italian Pizza" class="main_slide_imag img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='images/MAIN_SLIDE/juices1.jpg') }}" alt="Natural juices"  class="main_slide_imag img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='images/MAIN_SLIDE/humburger1.jpg') }}" alt="humburger1"  class="main_slide_imag img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='images/MAIN_SLIDE/orange1.jpg') }}" alt="pvin"  class="main_slide_imag img-fluid">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="kitchen_welcome_gibaciaire" class="row">
+      <div class="col-sm-6" id="kitchen_welcome_gibaciaire_col1">
+        <img src="{{ url_for('static', filename='images/kitechenn.jpeg') }}" alt="Natural juices"  class="main_slide_imag img-fluid">
+      </div>
+      <div class="col-sm-6 text-center" id="kitchen_welcome_gibaciaire_col2">
+        <h2>BIENVENUE CHEZ<span class="text-warning">GIBECIAIRE</span> <span class="text-danger">D'OR</span> ALIMENTATION</h2>
+
+        <p>
+          situer en ville de GOMA/NORD-KIVU,GIBECIEAIRE D'OR Alimentation est un shop en service mixte pour vos differents ceremonie ainsi que vos differentes manifestations,dans le but de notre creation qui n est autre que de rentre la vie des citoyen de GOMA et ses environs heureux en leur vournissant des gateaux de qualite pour leurs MARIAGEs,ANNIVERSAIRES ainsi que d'autres circonstance des la vie necessitant un special gateaux pour la meilleur celebration les gateaux sont notres specialite et de la nous sommes meilleur a notre genre.  Chez GIBECIAIRE D'OR vous trouverez non seulement des gateaux de votre choix ainsi que desirs mais aussi des poules ainsi que des oeufs bien traiter et bien produit pour vous.<br><br>
+          <span class="text-success h3">BIENVENUE CHEZ NOUS</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="gibeciaire_services">
+     
+      <h4 class="text-uppercase">NOS SERVICES</h4>
+      <p id="first">Chez GIBECIAIRE D'OR vous trouverez non seulement des gateaux de votre choix ainsi que desirs mais aussi des poules ainsi que des oeufs bien traiter et bien produit pour vous.</p>
+      <div class="row">
+          <div  class="services_divisions col-md-4">
+            <div class="services_transitions">
+              <img src="{{ url_for('static', filename='images/pushnova151000334.jpg') }}">
+            </div>
+            <h6 class="serviceh6">NOURRITURE SAINE</h6>
+            <p>Que la nourriture soit le médicament, le médicament doit être la nourriture. Une alimentation saine est un mode de vie, il est donc important d'établir des routines simples, réalistes et finalement vivables.</p>
+          </div>
+        <div  class="services_divisions col-md-4">
+            <div class="services_transitions">
+              <img src="{{ url_for('static', filename='images/reservation-icon-13.png') }}">
+            </div>
+            <h6>PRÉPARER PLUS RAPIDEMENT LA RÉSERVATION</h6>
+            <p>Faites votre réservation et profitez de nos services incomparables que nous offrons à nos clients</p>
+          </div>
+        <div  class="services_divisions col-md-4">
+          <div class="services_transitions">
+            <img src="{{ url_for('static', filename='images/healthy-food-icons.jpg') }}">
+          </div>
+          <h6 class="serviceh6">SUPPLEMENTAIRES</h6>
+          <p>Nous vous nourrissons non seulement, mais nous nous sommes également souvenus que nos bébés doivent être soignés, c'est pourquoi nous avons des chouchous pour vos bébés à des prix abordables. Appelez-nous ou contactez-nous et achetez votre bébé</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="hot_delicous_meal">
+      <h4 class="text-uppercase">Nourriture Delicieux</h4>
+      <p>Chez GIBECIAIRE D'OR vous trouverez non seulement des gateaux de votre choix ainsi que desirs mais aussi des poules ainsi que des oeufs bien traiter et bien produit pour vous.</p>
+
+      <div class="row hot_delicous_meal_rows">
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+          <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/ItalianPizza.jpg') }}" alt="Italian Pizza">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Pizza italienne</h6>
+            <p>Des ingrédients simples créent une pizza fabuleuse. Cette recette de pizza grecque est simple mais pleine de saveurs! Faites-le pour votre prochaine soirée pizza!</p>
+            <a href="tel:+243-973-615-181">commander</a>
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+          <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/greek pizza2.jpg') }}" alt="Greek Pizza">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Pizza grecque</h6>
+            <p>La feta crémeuse, les olives salées, les artichauts et le poivron rouge rôti ont satisfait ma faim et envoyé mes papilles en boucle ...</p>
+            <a href="tel:+243-973-615-181">commander</a>
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+          <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/american pizza2.jpg') }}" alt="American Pizza">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Pizza américaine</h6>
+            <p>This Greek Pizza is amazing! Not only that, but it's also a simple dish to prepare. You may look at the directions for this pizza and wonder why ...</p>
+             <a href="tel:+243-973-615-181">commander</a>
+          </div>
+        </div>
+      </div>
+      <div class="row hot_delicous_meal_rows">
+         <div class="col-md-4 hot_delicous_meal_row-cols">
+           <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Du jus d'orange</h6>
+            <p>Outre la perte de poids, le jus de fruits renforce votre système immunitaire, facilite la digestion et empêche les allergies et les maux d'entrer dans votre système</p>
+             <a href="tel:+243-973-615-181">commander</a>
+          </div>
+           <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/orange1.jpg') }}">
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+           <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Jus de pomme</h6>
+            <p>Les jus ont l'avantage de fournir de l'eau à votre corps et de le garder hydraté.</p>
+             <a href="tel:+243-973-615-181">commander</a>
+          </div>
+           <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/apple juice1.jpeg') }}" alt="Apple Juice">
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Jus de limonade</h6>
+            <p>Si vous vous sentez épuisé après une longue journée de travail, vous pouvez prendre un verre de gingembre ou de jus de citron car il restaure les niveaux d'énergie de votre corps.</p>
+             <a href="tel:+243-973-615-181">commander</a>
+          </div>
+          <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/lemonade juice2.jpg') }}" alt="Lemonade Juice">
+          </div>
+        </div>
+      </div>
+      <div class="row hot_delicous_meal_rows">
+         <div class="col-md-4 hot_delicous_meal_row-cols">
+           <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/birthday_cake1.png') }}">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Gâteaux d'anniversaire</h6>
+            <p>Votre anniversaire est un signe que vous avez une autre chance de remplir votre mission unique.</p>
+            <a href="tel:+243-973-615-181">commander</a>
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+           <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/wedding_cake1.jpg') }}">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>gâteaux de mariage</h6>
+            <p>La mariée et le marié se nourrissant de gâteau, cela peut être romantique et doux, symbolisant un engagement à subvenir à leurs besoins mutuels et une démonstration d'amour et d'affection.</p>
+             <a href="tel:+243-973-615-181">commander</a>
+
+          </div>
+        </div>
+        <div class="col-md-4 hot_delicous_meal_row-cols">
+           <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
+            <img src="{{ url_for('static', filename='images/HOT_DELICIOUS_DIVISION/graduation_congrstulations.jpg') }}">
+          </div>
+          <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
+            <h6>Gâteaux de félicitations</h6>
+            <p>Rien ne dit des félicitations comme un gâteau de fête personnalisé. Nous avons le gâteau parfait pour votre occasion spéciale</p>
+             <a href="tel:+243-973-615-181">commander</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="clients_cakes_enjoy_section" >
+      <div class="clients_cakes_enjoy_section_div">
+        <img src="{{ url_for('static', filename='images/enjoying1.jpg') }}">
+      </div>
+       <div class="clients_cakes_enjoy_section_div">
+        <img src="{{ url_for('static', filename='images/enjoying5.jpg') }}">
+      </div>
+       <div class="clients_cakes_enjoy_section_div">
+        <img src="{{ url_for('static', filename='images/enjoying3.jpg') }}">
+      </div>
+       <div class="clients_cakes_enjoy_section_div">
+        <img src="{{ url_for('static', filename='images/enjoying4.jpg') }}">
+      </div>
+    </div>
+    <div class="clear_fix"></div>
+    <div id="orientations_division" class="row">
+      <div class="col-md-4" id="orientations_division_col1">
+        <img src="{{ url_for('static', filename='images/kitechenn.jpeg') }}" class="img-fluid">
+      </div>
+      <div class="col-md-6" id="orientations_division_col2">
+        <a href="{{ url_for('pizzafre') }}" target="iframe_orientation">Pizza</a>
+        <a href="{{ url_for('burgersfre') }}" target="iframe_orientation">Boissons</a>
+        <a href="{{ url_for('boissons') }}" target="iframe_orientation">Burgers</a>
+        <a href="{{ url_for('cakesfre') }}" target="iframe_orientation">Cakes</a>
+        <a href="{{ url_for('pastafre') }}" target="iframe_orientation">Pasta</a>
+        <a href="{{ url_for('chickensfre') }}" target="iframe_orientation">Poules</a>
+        <iframe src="{{ url_for('pizzafre') }}" name="iframe_orientation"></iframe>
+      </div>
+    </div>
+    
+
+  {% endblock %}
