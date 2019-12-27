@@ -35,9 +35,6 @@
     </div>
 
     <div id="kitchen_welcome_gibaciaire" class="row">
-      <div class="col-sm-6" id="kitchen_welcome_gibaciaire_col1">
-        <img src="{{ url_for('static', filename='images/kitechenn.jpeg') }}" alt="Natural juices"  class="main_slide_imag img-fluid">
-      </div>
       <div class="col-sm-6 text-center" id="kitchen_welcome_gibaciaire_col2">
         <h2>BIENVENUE CHEZ<span class="text-warning">GIBECIAIRE</span> <span class="text-danger">D'OR</span> ALIMENTATION</h2>
 
@@ -45,6 +42,10 @@
           situer en ville de GOMA/NORD-KIVU,GIBECIEAIRE D'OR Alimentation est un shop en service mixte pour vos differents ceremonie ainsi que vos differentes manifestations,dans le but de notre creation qui n est autre que de rentre la vie des citoyen de GOMA et ses environs heureux en leur vournissant des gateaux de qualite pour leurs MARIAGEs,ANNIVERSAIRES ainsi que d'autres circonstance des la vie necessitant un special gateaux pour la meilleur celebration les gateaux sont notres specialite et de la nous sommes meilleur a notre genre.  Chez GIBECIAIRE D'OR vous trouverez non seulement des gateaux de votre choix ainsi que desirs mais aussi des poules ainsi que des oeufs bien traiter et bien produit pour vous.<br><br>
           <span class="text-success h3">BIENVENUE CHEZ NOUS</span>
         </p>
+      </div>
+
+      <div class="col-sm-6" id="kitchen_welcome_gibaciaire_col1">
+        <img src="{{ url_for('static', filename='images/kitechenn.jpeg') }}" alt="Natural juices"  class="main_slide_imag img-fluid">
       </div>
     </div>
 
@@ -78,6 +79,21 @@
       
     </div>
 
+    <div id="clients_cakes_enjoy_section" >
+          <div class="clients_cakes_enjoy_section_div">
+            <img src="{{ url_for('static', filename='images/enjoying1.jpg') }}">
+          </div>
+           <div class="clients_cakes_enjoy_section_div">
+            <img src="{{ url_for('static', filename='images/enjoying5.jpg') }}">
+          </div>
+           <div class="clients_cakes_enjoy_section_div">
+            <img src="{{ url_for('static', filename='images/enjoying3.jpg') }}">
+          </div>
+           <div class="clients_cakes_enjoy_section_div">
+            <img src="{{ url_for('static', filename='images/enjoying4.jpg') }}">
+          </div>
+    </div>
+
     <div id="hot_delicous_meal">
       <h4 class="text-uppercase">Nourriture Delicieux</h4>
       <p>Chez GIBECIAIRE D'OR vous trouverez non seulement des gateaux de votre choix ainsi que desirs mais aussi des poules ainsi que des oeufs bien traiter et bien produit pour vous.</p>
@@ -99,7 +115,7 @@
           </div>
           <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
             <h6>Pizza grecque</h6>
-            <p>La feta crémeuse, les olives salées, les artichauts et le poivron rouge rôti ont satisfait ma faim et envoyé mes papilles en boucle ...</p>
+            <p>Les olives salées, les artichauts et le poivron rouge rôti ont satisfait ma faim et envoyé mes papilles en boucle</p>
             <a href="tel:+243-973-615-181">commander</a>
           </div>
         </div>
@@ -109,7 +125,7 @@
           </div>
           <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
             <h6>Pizza américaine</h6>
-            <p>This Greek Pizza is amazing! Not only that, but it's also a simple dish to prepare. You may look at the directions for this pizza and wonder why ...</p>
+            <p>Cette pizza grecque est incroyable! Non seulement cela, mais c'est aussi un plat simple à préparer.</p>
              <a href="tel:+243-973-615-181">commander</a>
           </div>
         </div>
@@ -118,7 +134,7 @@
          <div class="col-md-4 hot_delicous_meal_row-cols">
            <div class="hot_delicous_meal_text hot_delicous_meal_indivision">
             <h6>Du jus d'orange</h6>
-            <p>Outre la perte de poids, le jus de fruits renforce votre système immunitaire, facilite la digestion et empêche les allergies et les maux d'entrer dans votre système</p>
+            <p>Le jus de fruits renforce votre système immunitaire, facilite la digestion et empêche les allergies et les maux d'entrer dans votre système</p>
              <a href="tel:+243-973-615-181">commander</a>
           </div>
            <div class="hot_delicous_meal_img hot_delicous_meal_indivision">
@@ -181,20 +197,7 @@
       </div>
       
     </div>
-    <div id="clients_cakes_enjoy_section" >
-      <div class="clients_cakes_enjoy_section_div">
-        <img src="{{ url_for('static', filename='images/enjoying1.jpg') }}">
-      </div>
-       <div class="clients_cakes_enjoy_section_div">
-        <img src="{{ url_for('static', filename='images/enjoying5.jpg') }}">
-      </div>
-       <div class="clients_cakes_enjoy_section_div">
-        <img src="{{ url_for('static', filename='images/enjoying3.jpg') }}">
-      </div>
-       <div class="clients_cakes_enjoy_section_div">
-        <img src="{{ url_for('static', filename='images/enjoying4.jpg') }}">
-      </div>
-    </div>
+
     <div class="clear_fix"></div>
     <div id="orientations_division" class="row">
       <div class="col-md-4" id="orientations_division_col1">
@@ -202,8 +205,8 @@
       </div>
       <div class="col-md-6" id="orientations_division_col2">
         <a href="{{ url_for('pizzafre') }}" target="iframe_orientation">Pizza</a>
-        <a href="{{ url_for('burgersfre') }}" target="iframe_orientation">Boissons</a>
-        <a href="{{ url_for('boissons') }}" target="iframe_orientation">Burgers</a>
+        <a href="{{ url_for('burgersfre') }}" target="iframe_orientation">Burgers</a>
+        <a href="{{ url_for('boissons') }}" target="iframe_orientation">Boissons</a>
         <a href="{{ url_for('cakesfre') }}" target="iframe_orientation">Cakes</a>
         <a href="{{ url_for('pastafre') }}" target="iframe_orientation">Pasta</a>
         <a href="{{ url_for('chickensfre') }}" target="iframe_orientation">Poules</a>

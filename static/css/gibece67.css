@@ -110,11 +110,12 @@ div#kitchen_welcome_gibaciaire img{
 	height: 100%;
 }
 div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col1{
-	margin-right: -10px;
+	margin-left:-15px;
 }
 div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col2{
 	background-color: rgba(0,0,0,0.9);
-	margin-left: -5px;
+	margin-right: 0px;
+	margin-left: 15px;
 	padding: 60px;
 }
 div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col2 h2{
@@ -182,11 +183,12 @@ div#hot_delicous_meal{
 	background-color: rgba(0,0,0,0.94);
 	min-height: 900px;
 	overflow: none;
-	padding: 20px 0px;
+	padding: 10px 0px;
 }
 div#hot_delicous_meal h4{
 	color: rgba(255,155,0,1);
 	font-weight: bold;
+	margin-top: 15px;
 	margin-bottom: 50px;
 	text-align: center;
 	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
@@ -227,6 +229,7 @@ div#hot_delicous_meal div.hot_delicous_meal_text p{
 	
 	text-align: left;
 	margin-bottom: 20px;
+	font-size: 12px;
 }
 div#hot_delicous_meal div.hot_delicous_meal_text a{
 	
@@ -253,6 +256,9 @@ div#hot_delicous_meal div.hot_delicous_meal_rows{
 	margin-top: 7px;
 }
 /*styling clients enjoying cakes*/
+div#clients_cakes_enjoy_section{
+	margin-bottom: 5px;
+}
 div#clients_cakes_enjoy_section div.clients_cakes_enjoy_section_div{
 	float: left;
 	width: 25%;
@@ -373,6 +379,10 @@ div#hot_delicous_meal{
 /*Kitchen and welcome to gibeciaire restaurent division styling */
 div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col1{
 	margin-right: 0px;
+	margin-left:0px;
+}
+div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col1{
+	
 }
 div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col2{
 	margin-right: 15px;
@@ -385,7 +395,7 @@ div#kitchen_welcome_gibaciaire #kitchen_welcome_gibaciaire_col2 h2{
 }
 /* gibeciaire services styling */
 div#gibeciaire_services{
-	min-height: 1200px;
+	min-height: 1180px;
 	padding: 30px;
 }
 div#gibeciaire_services h6{
@@ -393,10 +403,12 @@ div#gibeciaire_services h6{
 }
 div#gibeciaire_services p#first{
 	margin-bottom: 20px;
+	font-size: 14px;
+	text-align: justify;
 }
 div#gibeciaire_services p{
-	text-align: center;
-	font-size: 1em;
+	font-size: 14px;
+	text-align: justify;
 }
 div#gibeciaire_services div.services_transitions{
 	margin-left: 90px;
@@ -414,9 +426,12 @@ div#hot_delicous_meal h4{
 }
 
 div#hot_delicous_meal p{
-	text-align: center;
+	text-align: justify;
 	color: rgba(255,155,0,0.5);
 	margin-bottom: 30px;
+	font-size: 14px;
+	margin-left: 5px;
+	margin-right: 10px;
 
 }
 
@@ -428,6 +443,10 @@ div#hot_delicous_meal div.hot_delicous_meal_text{
 	padding: 0px 2px;
 	text-align: left;
 	margin-left: 0px;
+}
+div#hot_delicous_meal div.hot_delicous_meal_text p{
+	font-size: 11px;
+	text-align: justify;
 }
 
 div#hot_delicous_meal div.hot_delicous_meal_row-cols{
