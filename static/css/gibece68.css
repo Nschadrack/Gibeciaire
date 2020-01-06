@@ -348,6 +348,11 @@ div.footer_division ul li{
 /* media queries */
 @media only screen and (max-width: 768px){
 
+div#gibeciaire_start h1{
+	
+	font-size: 0.5em;
+}	
+
 div#gibeciaire_collapse a#language{
 	margin-left: 0px;
 	margin-right: 0px;
