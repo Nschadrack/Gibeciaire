@@ -17,7 +17,8 @@ save_picture_file =""
 @gibapp.route("/admin/dashboard")
 @login_required
 def admin():
-	return render_template("admin_pages/adminpage.html")
+	title="Admin Dashboard"
+	return render_template("admin_pages/adminpage.html", title=title)
 
 def save_picture_food(form_picture):
 	randon_hex = secrets.token_hex(8)
@@ -45,7 +46,7 @@ def save_picture_others(form_picture):
 
 @gibapp.route("/admin/alimentation/food")
 def admin_food():
-
+	title="food page"
 	current_imaging =['1']
 	current_imaging.clear()
 	curee =['1']
@@ -90,11 +91,11 @@ def admin_food():
 	#	curee.append(url_for('static',filename='images/alimantation_food/' + num))
 	
 
-	return render_template("admin_pages/alimentation_food_admin.html", curee=curee)
+	return render_template("admin_pages/alimentation_food_admin.html", curee=curee, title=title)
 
 @gibapp.route("/admin/alimentation/shop")
 def admin_shop():
-
+	title="admin shop"
 	current_imaging =['1']
 	current_imaging.clear()
 	curee =['1']
@@ -114,12 +115,12 @@ def admin_shop():
 	for num1 in current_i:
 		curee.append(url_for('static',filename='images/alimentation_shop/' + num1)) 
 
-	return render_template("admin_pages/alimentation_shop_admin.html", curee=curee)
+	return render_template("admin_pages/alimentation_shop_admin.html", curee=curee, title=title)
 
 
 @gibapp.route("/admin/alimentation/others")
 def admin_others():
-	
+	title="admin others"
 	current_imaging =['1']
 	current_imaging.clear()
 	curee =['1']
@@ -140,7 +141,7 @@ def admin_others():
 		curee.append(url_for('static',filename='images/others/' + num1)) 
 	
 
-	return render_template("admin_pages/others_admin.html", curee=curee)
+	return render_template("admin_pages/others_admin.html", curee=curee, title=title)
 
 
 @gibapp.route("/admin/create_account", methods=["POST", "GET"])
